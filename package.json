@@ -1,0 +1,32 @@
+{
+  "name": "cf-access-auth",
+  "version": "1.0.0",
+  "description": "Authenticate your application using Cloudflare Access. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/w3dev/cf-access-auth.git"
+  },
+  "keywords": [
+    "cloudflare",
+    "cf",
+    "auth",
+    "cf-access",
+    "access"
+  ],
+  "author": "Ashutosh Kumar <ashutosh@w3dev.in>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/w3dev/cf-access-auth/issues"
+  },
+  "homepage": "https://github.com/w3dev/cf-access-auth#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "jsonwebtoken": "^8.5.1",
+    "jwks-rsa": "^2.0.3",
+    "node-fetch": "^2.6.1"
+  }
+}
