@@ -1,0 +1,21 @@
+{
+  "name": "express-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cf-access-auth": "file:../..",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.1",
+    "user": "^0.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
