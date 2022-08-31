@@ -1,5 +1,7 @@
 # Cloudflare Access Authenticator 
 
+Get User Email in your application protected via Cloudflare access and validate the user login.
+
 ## How to use
 1. Create a New Application on Cloudflare Teams Dashboard.
 2. Configure your application to be protected with Cloudflare access
@@ -9,7 +11,7 @@
 <br>
 
 ## Express JS Example
-```
+```javascript
 
 const cookieParser = require('cookie-parser')
 
