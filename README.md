@@ -37,9 +37,10 @@ const protectedRoute = (req, res, next) => {
 }
 
 // Private Route
-app.get("/private", protectedRoute, (req, res)=>[
-    res.send('Private Route via Cloudflare Access')
-])
+app.get("/private", protectedRoute, (req, res)=>{
+    const loggedInUser = req.UserData.email;
+    res.send(`Private Route accessed by ${loggedInUser}`)
+})
 
 // Public Route
 app.get('/', (req, res) => {
