@@ -20,6 +20,9 @@ const cfAuthenticator = new CFAccessAuth({
     AuthDomain:'https://XXXX.cloudflareaccess.com',
 })
 
+// Required to Parse the Cookies
+app.use(cookieParser())
+
 const protectedRoute = (req, res, next) => {
     const cfCookieValue = req.cookies['CF_Authorization'];
     cfAuthenticator.Authenticate(cfCookieValue, (err, data)=>{
